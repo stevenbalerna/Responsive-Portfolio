@@ -14,7 +14,7 @@ body {
 /* general */
 
 .container {
-  width: 100%;
+  
   max-width: auto;
   margin: 0 auto;
   clear: both;
@@ -28,6 +28,7 @@ h2,
 h3,
 p {
   margin-bottom: 20px;
+  float: center;
 }
 
 p:last-child {
@@ -149,8 +150,8 @@ h3, h2 {
 
 .work {
   position: relative;
-  float: left;
-  width: 100%;
+  float: center;
+  width: 250px;
   margin: 20px 0 25px;
   overflow: auto;
   height: auto;
@@ -234,43 +235,32 @@ img {
   height: auto;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 640px) {
-  .work img {
-    width: 100%;
-    border: 0 none;
-    opacity: 0.8;
-    height: auto;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 640px) {
-  .work img {
-    width: 100%;
-    border: 0 none;
-    opacity: 0.8;
-    height: auto;
-  }
-}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px)  {
-  .work img {
-    width: 100%;
-    border: 0 none;
-    opacity: 0.8;
-    height: auto;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 980px)  {.work img {
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   width: 100%;
-  border: 0 none;
-  opacity: 0.8;
-  height: auto;
+  float: center;
 }
+
+/* Mobile Styles */
+@media only screen and (min-width: 640px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 989px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
 }
 
